@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - A Pen by jlll123</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="viewport">
+	<div class="main" id="main">
+<!-- 		<div class="letter"><span><img src="https://image-aws-us-west-2.vsco.co/2c69ac/15114039/5b014683ef9354301455490c/597x800/vsco5b01468d2f7b7.jpg" alt=""></span></div>
+		<div class="letter"><span><img src="https://image-aws-us-west-2.vsco.co/2c69ac/15114039/5b014683ef9354301455490c/597x800/vsco5b01468d2f7b7.jpg" alt=""></span></div>
+		<div class="letter"><span><img src="https://image-aws-us-west-2.vsco.co/2c69ac/15114039/5b014683ef9354301455490c/597x800/vsco5b01468d2f7b7.jpg" alt=""></span></div>
+		<div class="letter"><span><img src="https://image-aws-us-west-2.vsco.co/2c69ac/15114039/5b014683ef9354301455490c/597x800/vsco5b01468d2f7b7.jpg" alt=""></span></div>
+		<div class="letter"><span><img src="https://image-aws-us-west-2.vsco.co/2c69ac/15114039/5b014683ef9354301455490c/597x800/vsco5b01468d2f7b7.jpg" alt=""></span></div>
+		<div class="letter"><span><img src="https://image-aws-us-west-2.vsco.co/2c69ac/15114039/5b014683ef9354301455490c/597x800/vsco5b01468d2f7b7.jpg" alt=""></span></div>
+		<div class="letter"><span><img src="https://image-aws-us-west-2.vsco.co/2c69ac/15114039/5b014683ef9354301455490c/597x800/vsco5b01468d2f7b7.jpg" alt=""></span></div>
+		<div class="letter"><span><img src="https://image-aws-us-west-2.vsco.co/2c69ac/15114039/5b014683ef9354301455490c/597x800/vsco5b01468d2f7b7.jpg" alt=""></span></div>
+		<div class="letter"><span><img src="https://image-aws-us-west-2.vsco.co/2c69ac/15114039/5b014683ef9354301455490c/597x800/vsco5b01468d2f7b7.jpg" alt=""></span></div>
+		<div class="letter"><span><img src="https://image-aws-us-west-2.vsco.co/2c69ac/15114039/5b014683ef9354301455490c/597x800/vsco5b01468d2f7b7.jpg" alt=""></span></div> -->
+	</div>
+</div>
+
+<div class="control control--top-left">
+	<div class="control__row">
+		<label class="control__label">Your text</label>
+		<input type="text" id="your-text" name="yout-text">
+	</div>
+	<div class="control__row">
+		<label class="control__label">Main Background-color</label>
+		<input type="color" id="main-bg-color" name="main-bg-color">
+	</div>
+	<div class="control__row">
+		<label class="control__label">Letter Background-color</label>
+		<input type="color" id="letter-bg-color" name="letter-bg-color">
+	</div>
+	<div class="control__row">
+		<label class="control__label">Letter Color</label>
+		<input type="color" id="letter-color" name="letter-color" value="#ffffff">
+	</div>
+	<div class="control__row">
+		<label class="control__label">Letter Border Color</label>
+		<input type="color" id="letter-border-color" name="letter-border-color" value="#FF0000">
+	</div>
+	<div class="control__row">
+		<label class="control__label">Letter Border Width</label>
+		<input type="range" id="letter-border-width" name="letter-border-width" value="0" min="0" max="50">
+	</div>
+	<div class="control__row">
+		<label class="control__label">Blend Mode</label>
+		<select class="blend-mode" name="blend-mode" id="blend-mode">
+				<option value="normal">normal</option>
+				<option value="color">color</option>
+				<option value="color-burn">color-burn</option>
+				<option value="color-dodge">color-dodge</option>
+				<option value="darken">darken</option>
+				<option value="difference">difference</option>
+				<option value="exclusion">exclusion</option>
+				<option value="hard-light">hard-light</option>
+				<option value="hue">hue</option>
+				<option value="lighten">lighten</option>
+				<option value="luminosity">luminosity</option>
+				<option value="multiply">multiply</option>
+				<option value="overlay">overlay</option>
+				<option value="saturation">saturation</option>
+				<option value="screen">screen</option>
+				<option value="soft-light">soft Light</option>
+		</select>
+	</div>
+	<div class="control__row">
+		<label class="control__label">Font Size</label>
+		<input type="range" id="font-size" name="font-size" value="100" min="0" max="100">
+	</div>
+	<div class="control__row">
+		<label class="control__label">Blur</label>
+		<input type="range" id="blur" name="blur" value="0" min="0" max="100">
+	</div>
+	<div class="control__row">
+		<label class="control__label">Contrast</label>
+		<input type="range" id="contrast" name="contrast" step="0.05" value="1" min="1" max="100">
+	</div>
+</div>
+<div class="control control--top-right">
+	<div class="control__row">
+		<label class="control__label">Radius</label>
+		<input type="range" id="radius" name="radius" value="0" min="0" max="50">
+	</div>
+	<div class="control__row">
+		<label class="control__label">Perspective</label>
+		<input type="range" id="perspective" name="perspective" value="5000" min="0" max="5000">
+	</div>
+	<div class="control__row">
+		<label class="control__label">Easing</label>
+		<select class="anim-easing" name="anim-easing" id="anim-easing">
+				<option value="linear">Linear</option>
+				<option value="ease">Ease</option>
+			
+				<option value="ease-in">Ease In</option>
+				<option value="cubic-bezier(0.47, 0, 0.75, 0.72)">Ease In Sine</option>
+				<option value="cubic-bezier(0.55, 0.09, 0.68, 0.53)">Ease In Quadratic</option>
+				<option value="cubic-bezier(0.55, 0.06, 0.68, 0.19)">Ease In Cubic</option>
+				<option value="cubic-bezier(0.6, -0.28, 0.74, 0.05)">Ease In Back</option>
+				<option value="cubic-bezier(0.4, 0, 1, 1)">Fast Out, Linear In</option>
+			
+				<option value="ease-out" selected>Ease Out</option>
+				<option value="cubic-bezier(0.39, 0.58, 0.57, 1)">Ease Out Sine</option>
+				<option value="cubic-bezier(0.25, 0.46, 0.45, 0.94)">Ease Out Quadratic</option>
+				<option value="cubic-bezier(0.22, 0.61, 0.36, 1)">Ease Out Cubic</option>
+				<option value="cubic-bezier(0.18, 0.89, 0.32, 1.28)">Ease Out Back</option>
+				<option value="cubic-bezier(0, 0, 0.2, 1)">Linear Out, Slow In</option>
+			 
+			
+				<option value="ease-in-out">Ease In Out</option>
+				<option value="cubic-bezier(0.45, 0.05, 0.55, 0.95)">Ease In Out Sine</option>
+				<option value="cubic-bezier(0.46, 0.03, 0.52, 0.96)">Ease In Out Quadratic</option>
+				<option value="cubic-bezier(0.65, 0.05, 0.36, 1)">Ease In Out Cubic</option>
+				<option value="cubic-bezier(0.68, -0.55, 0.27, 1.55)">Ease In Out Back</option>
+				<option value="cubic-bezier(0.4, 0, 0.2, 1)">Fast Out, Slow In </option>			
+			
+		</select>
+	</div>
+	<div class="control__row">
+		<label class="control__label">Timing</label>
+		<input type="range" id="timing" name="timing" value="1" min=".1" max="20" step=".1">
+	</div>
+	<div class="control__row">
+		<label class="control__label">Delay</label>
+		<input type="range" id="delay" name="delay" value="1" min=".1" max="100" step=".1">
+	</div>
+	<div class="control__row">
+		<label class="control__label">Divisions</label>
+		<input type="range" id="division" name="division" value="25" min="2" max="100">
+	</div>
+	<div class="control__row">
+		<button id="pause-play">Pause/Play</button>
+	</div>
+	<div class="control__row">
+		<label class="control__label">Animation Direction</label>
+		<select class="anim-direction" name="anim-direction" id="anim-direction">
+				<option value="normal">Normal</option>
+				<option value="reverse">Reverse</option>
+				<option value="alternate" selected>Alternate</option>
+				<option value="alternate-reverse">Alternate Reverse</option>
+		</select>
+	</div>
+	<div class="control__row">
+		<label class="control__label">Animation Style</label>
+		<input type="radio" class="anim-style" name="anim-style" value="1" checked>
+		<label for="">1</label>
+		<input type="radio" class="anim-style" name="anim-style" value="2">
+		<label for="">2</label>
+	</div>
+	<div class="control__row">
+		<label class="control__label">Change Transform Origin on MouseMove</label>
+		<input type="checkbox" id="mouse-move" name="mouse-move">
+	</div>
+</div>
+<div class="control control--bottom-right">
+	<div class="control__row">
+		<label class="control__label">From Scale X</label>
+		<input type="range" id="from-scale-x" name="from-scale-x" value="0" min="-3" max="3" step="0.01">
+		<div class="slider"></div>
+	</div>
+	<div class="control__row">
+		<label class="control__label">From Scale Y</label>
+		<input type="range" id="from-scale-y" name="from-scale-y" value="1" min="-3" max="3" step="0.01">
+	</div>
+	<div class="control__row">
+		<label class="control__label">From Rotate</label>
+		<input type="range" id="from-rotate" name="from-rotate" value="0" min="-1440" max="1440">
+	</div>
+	<div class="control__row">
+		<label class="control__label">From Rotate X</label>
+		<input type="range" id="from-rotate-x" name="from-rotate-x" value="0" min="-1440" max="1440">
+	</div>
+	<div class="control__row">
+		<label class="control__label">From Rotate Y</label>
+		<input type="range" id="from-rotate-y" name="from-rotate-y" value="0" min="-1440" max="1440">
+	</div>
+	<div class="control__row">
+		<label class="control__label">From Skew X</label>
+		<input type="range" id="from-skew-x" name="from-skew-x" value="0" min="-1440" max="1440">
+	</div>
+	<div class="control__row">
+		<label class="control__label">From Skew Y</label>
+		<input type="range" id="from-skew-y" name="from-skew-y" value="0" min="-1440" max="1440">
+	</div>
+	<div class="control__row">
+		<label class="control__label">From Translate X</label>
+		<input type="range" id="from-translate-x" name="from-translate-x" value="0" min="-100" max="100" step="0.1">
+	</div>
+	<div class="control__row">
+		<label class="control__label">From Translate Y</label>
+		<input type="range" id="from-translate-y" name="from-translate-y" value="0" min="-100" max="100" step="0.1">
+	</div>
+
+	<div class="control__row">
+		<label class="control__label">To Scale X</label>
+		<input type="range" id="to-scale-x" name="to-scale-x" value="1" min="-3" max="3" step="0.01">
+	</div>
+	<div class="control__row">
+		<label class="control__label">To Scale Y</label>
+		<input type="range" id="to-scale-y" name="to-scale-y" value="1" min="-3" max="3" step="0.01">
+	</div>
+	<div class="control__row">
+		<label class="control__label">To Rotate</label>
+		<input type="range" id="to-rotate" name="to-rotate" value="0" min="-1440" max="1440">
+	</div>
+	<div class="control__row">
+		<label class="control__label">To Rotate X</label>
+		<input type="range" id="to-rotate-x" name="to-rotate-x" value="0" min="-1440" max="1440">
+	</div>
+	<div class="control__row">
+		<label class="control__label">To Rotate Y</label>
+		<input type="range" id="to-rotate-y" name="to-rotate-y" value="0" min="-1440" max="1440">
+	</div>
+	<div class="control__row">
+		<label class="control__label">To Skew X</label>
+		<input type="range" id="to-skew-x" name="to-skew-x" value="0" min="-1440" max="1440">
+	</div>
+	<div class="control__row">
+		<label class="control__label">To Skew Y</label>
+		<input type="range" id="to-skew-y" name="to-skew-y" value="0" min="-1440" max="1440">
+	</div>
+	<div class="control__row">
+		<label class="control__label">To Translate X</label>
+		<input type="range" id="to-translate-x" name="to-translate-x" value="0" min="-100" max="100" step="0.1">
+	</div>
+	<div class="control__row">
+		<label class="control__label">To Translate Y</label>
+		<input type="range" id="to-translate-y" name="to-translate-y" value="0" min="-100" max="100" step="0.1">
+	</div>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
+<script src='https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>

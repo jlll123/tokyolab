@@ -240,6 +240,13 @@
                 const app = cloudbase.init({
                   env: 'tokyolab-4g2wbkvm94829d85' // 您的环境id
                 })
+		      const auth = app.auth()
+await auth.signInWithEmailAndPassword(email, password) // 邮箱登录
+if (!(await auth.isUsernameRegistered(username))) { // 检查用户名是否绑定过
+  await auth.currentUser.updateUsername(username) // 绑定用户名
+}
+		      const auth = app.auth()
+await auth.signInWithUsernameAndPassword(username, password) // 用户名密码登录
               </script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
